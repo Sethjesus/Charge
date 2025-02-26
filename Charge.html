@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>電費與碳排放計算器 (營業用電)</title>
 
-    <!-- PWA 支援 -->
-    <link rel="manifest" href="manifest.json">
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js')
-            .then(() => console.log("Service Worker 註冊成功"))
-            .catch(error => console.log("Service Worker 註冊失敗", error));
-        }
-    </script>
+   <!-- PWA 支援 -->
+<link rel="manifest" href="manifest.json">
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("service-worker.js")
+            .then(() => console.log("✅ Service Worker 註冊成功"))
+            .catch(error => console.log("❌ Service Worker 註冊失敗", error));
+        });
+    }
+</script>
+
 
     <style>
         body {
