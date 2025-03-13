@@ -1,7 +1,7 @@
 {
     "name": "電費與碳排放計算器",
     "short_name": "碳排計算",
-    "start_url": "index.html",
+    "start_url": "Charge.html",
     "display": "standalone",
     "background_color": "#4CAF50",
     "theme_color": "#007BFF",
